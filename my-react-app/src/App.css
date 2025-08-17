@@ -2,41 +2,99 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  background-color: #e5e7eb; 
+  color: #0f172a;            
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input {
+  background-color: #f9fafb;
+  color: #0f172a;
+  border: 1px solid #d1d5db;
+  outline: none;
+  height: 44px;
+  font-size: 14px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
 
-.card {
-  padding: 2em;
+form button {
+  background-color: #475569;
+  color: #ffffff;
+  border: none;
+  outline: none; 
+  height: 44px;
+  font-size: 14px;
+  padding: 0 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.read-the-docs {
-  color: #888;
+form button:hover {
+  background-color: #334155;
+}
+
+form button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #475569;
+}
+
+.profit {
+  color: #16a34a;    /* nice green */
+  font-weight: 700;  /* bold */
+}
+
+.loss {
+  color: #dc2626;    /* nice red */
+  font-weight: 700;  /* bold */
+}
+
+.stock-list {
+  max-width: 600px;
+  margin: 4px auto 0;
+  display: grid;
+  gap: 8px;
+}
+
+.empty-message {
+  color: #475569;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.stock-card {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px #00000033;
+  text-align: left;
+}
+
+.stock-card p {
+  margin: 6px 0;
+}
+
+.profit {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.loss {
+  color: #dc2626;
+  font-weight: 700;
 }
