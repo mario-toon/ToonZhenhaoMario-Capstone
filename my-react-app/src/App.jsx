@@ -11,7 +11,7 @@ function App() {
   const fetchStockPrice = async (symbol) => {
     try {
       const res = await fetch(
-        `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=demo`
+        `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=1SCADSD5WSF7KDY6`
       );
       const data = await res.json();
 
