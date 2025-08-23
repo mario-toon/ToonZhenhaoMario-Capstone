@@ -54,13 +54,13 @@ form button:focus {
 }
 
 .profit {
-  color: #16a34a;    /* nice green */
-  font-weight: 700;  /* bold */
+  color: #16a34a;
+  font-weight: 700;
 }
 
 .loss {
-  color: #dc2626;    /* nice red */
-  font-weight: 700;  /* bold */
+  color: #dc2626;
+  font-weight: 700;
 }
 
 .stock-list {
@@ -89,12 +89,26 @@ form button:focus {
   margin: 6px 0;
 }
 
-.profit {
-  color: #16a34a;
-  font-weight: 700;
+.stock-list-container {
+  max-height: 320px;   /* adjust height as you like */
+  overflow-y: auto;
+  margin-top: 1rem;
+  padding-right: 4px;
 }
 
-.loss {
-  color: #dc2626;
-  font-weight: 700;
+.stock-list-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.stock-list-container::-webkit-scrollbar-thumb {
+  background-color: #475569;
+  border-radius: 6px;
+}
+
+.stock-list-container::-webkit-scrollbar-thumb:hover {
+  background-color: #334155;
+}
+
+.stock-list-container::-webkit-scrollbar-track {
+  background: transparent;
 }
